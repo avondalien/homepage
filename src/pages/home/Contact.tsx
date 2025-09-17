@@ -11,22 +11,22 @@ const Contact = () => {
             <Typography variant="h4">
                 Contact
             </Typography>
-            <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="center">
-                <Box width={{xs: '100%', md: '45%' }} padding={2}>
+            <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="left">
+                {/* <Box width={{xs: '100%', md: '45%' }} padding={2}>
                     <Card>
                         <CardContent>
                             <ContactForm />
                         </CardContent>
                     </Card>
-                </Box>
-                <Box width={{xs: '100%', md: '45%' }} padding={2}>
+                </Box> */}
+                <Box width={{xs: '100%', md: '45%' }}>
                     <Card>
                         <CardContent>
                             <Typography 
                                 variant="h5"
                                 align="center"
                             >
-                                Or Write Us an Email
+                                Write Us an Email
                             </Typography>
                             <Typography 
                                 variant="body1" 

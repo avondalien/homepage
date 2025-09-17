@@ -27,14 +27,14 @@ const Hero = () => {
                                     <Chip label="Software Design Patterns" sx={{marginRight: 1, marginBottom: 1}} />
                                 </Box>
                             </Box>
-                            <Box display={{sm: 'none', md: 'flex'}} width="100%">
+                            {/* <Box display={{sm: 'none', md: 'flex'}} width="100%">
                                 <img></img>
                                 <Typography variant="body1" component="ul">
                                     <li>Cloud native</li>
                                     <li>Secure</li>
                                     <li></li>
                                 </Typography>
-                            </Box>
+                            </Box> */}
                         </Stack>
                 </CardContent>
             </Card>

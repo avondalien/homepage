@@ -16,7 +16,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
-    const {title, description, categories, githubLink, image, imageAltText} = props
+    const {title, description, categories, githubLink} = props
     return (
         <Card sx={{margin: 1, width: {xs: "100%", md: "45%"}}}>
             <CardContent>
@@ -40,7 +40,7 @@ const ProjectCard = (props: ProjectCardProps) => {
                         ) : ""
                     }
                     <Box display="flex" flexDirection="row" flexWrap="wrap">
-                        {categories.map(c => (<Chip label={c} sx={{marginTop: 1, marginRight: 1}}/>))}
+                        {categories.map(c => (<Chip label={c} key={c} sx={{marginTop: 1, marginRight: 1}}/>))}
                     </Box>
                 </Stack>
             </CardContent>
@@ -49,13 +49,13 @@ const ProjectCard = (props: ProjectCardProps) => {
 }
 
 const ProjectDescriptions = [
-    {
-        title: "Securing QInterpreter",
-        description: "QInterpreter's student team built a gorgeous interface over a jupyter notebook. Avondalien helped close security vulnerabilities before launch day.",
-        categories: ["security", "cloud architecture"],
-        image: "",
-        imageAltText: ""
-    },
+    // {
+    //     title: "Securing QInterpreter",
+    //     description: "QInterpreter's student team built a gorgeous interface over a jupyter notebook. Avondalien helped close security vulnerabilities before launch day.",
+    //     categories: ["security", "cloud architecture"],
+    //     image: "",
+    //     imageAltText: ""
+    // },
     {
         title: "Real Time Transit Updates",
         description: "When Terra Coffee opened a location near a busy transit stop, Avondalien built a custom bus and train tracking board so customers could spend more time in the shop instead of on the platform.",
@@ -74,7 +74,7 @@ const Projects = () => {
                 Projects
             </Typography>
             <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-between">
-                {ProjectDescriptions.map(pd => (<ProjectCard {...pd} />))}
+                {ProjectDescriptions.map(pd => (<ProjectCard {...pd} key={pd.title} />))}
             </Box>
         </section>
     )

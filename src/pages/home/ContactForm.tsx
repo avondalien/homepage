@@ -7,7 +7,7 @@ import { useEmailClient, type SendEmailRequest } from "../../clients"
 
 export const ContactForm = () => {
     const {
-        success,
+        sent,
         pending,
         error,
         handleSendEmail
@@ -91,10 +91,14 @@ export const ContactForm = () => {
                             <Button type="reset">
                                 Reset
                             </Button>
-                            <Button variant="outlined" type="submit" disabled={success || pending}>
-                                { success ? "Form Submitted" : "Request Consultation" }
+                            <Button variant="outlined" type="submit" disabled={sent || pending}>
+                                { sent ? "Form Submitted" : "Request Consultation" }
                             </Button>
                         </Stack>
+                        { error && (<Typography variant="body1" color="red" align="right">
+                                        Failed to submit. Please try again
+                                    </Typography>)
+                        }
                     </Stack>
                 </Form>
         </Stack>
