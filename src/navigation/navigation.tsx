@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box"
 import Button from "@mui/material/Button"
+import Link from "@mui/material/Link"
 import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
 
@@ -8,21 +9,21 @@ const Navigation = () => {
     return (
         <>
             <header>
-                <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-between" marginBottom={4}>
+                <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-between" alignItems="center" marginBottom={4}>
                     <Stack direction="column">
                         <Typography variant="logo">Avondalien Software</Typography>
                         <Typography variant="body2">Built for Research</Typography>
                     </Stack>
                     <nav>
-                        <Stack direction="row" spacing={2} justifyContent="right">
+                        <Stack direction="row" marginTop={{xs: 2, sm: 0}} spacing={{xs: 0, sm: 2}} justifyContent={{xs: "left", lg: "right"}}>
                             <a href="#services">
-                                <Button>Services</Button>
+                                <Button sx={{ display: {xs: "none", sm: "flex"}}}>Services</Button>
                             </a>
                             <a href="#projects">
-                                <Button>Projects</Button>
+                                <Button sx={{ display: {xs: "none", sm: "flex"}}}>Projects</Button>
                             </a>
                             <a href="#about">
-                                <Button>About</Button>
+                                <Button sx={{ display: {xs: "none", sm: "flex"}}}>About</Button>
                             </a>
                             <a href="#contact">
                                 <Button variant="outlined">Contact</Button>
