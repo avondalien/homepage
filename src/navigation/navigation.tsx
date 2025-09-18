@@ -1,3 +1,4 @@
+import Box from "@mui/material/Box"
 import Button from "@mui/material/Button"
 import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
@@ -7,7 +8,7 @@ const Navigation = () => {
     return (
         <>
             <header>
-                <Stack direction="row" justifyContent="space-between" marginBottom={4}>
+                <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-between" marginBottom={4}>
                     <Stack direction="column">
                         <Typography variant="logo">Avondalien Software</Typography>
                         <Typography variant="body2">Built for Research</Typography>
@@ -28,7 +29,7 @@ const Navigation = () => {
                             </a>
                         </Stack>
                     </nav>
-                </Stack>
+                </Box>
             </header>
         </>
     )
