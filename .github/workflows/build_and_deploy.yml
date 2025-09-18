@@ -20,4 +20,3 @@ jobs:
     - run: npm ci
     - run: npm run build  
     - run: wrangler deploy
-    - run: cat ./wrangler/deploy/config.json
