@@ -4,6 +4,9 @@
  */
 {
 	"name": "avondalien",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
 	"compatibility_date": "2025-04-03",
 	"assets": {
 		"not_found_handling": "single-page-application"
@@ -17,7 +20,8 @@
 			"pattern": "www.avondalien.com",
 			"custom_domain": true
 		}
-	]
+	],
+	"main": "./worker/index.ts",
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
@@ -35,7 +39,12 @@
 	 * Environment Variables
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
 	 */
-	// "vars": { "MY_VARIABLE": "production_value" },
+	"vars": {
+		"AWS_ACCESS_KEY_ID": "AKIAZHLCKSUQE53W24HK",
+		"AWS_REGION": "us-east-2",
+		"NEW_LEAD_TOPIC_ARN": "arn:aws:sns:us-east-2:634250761504:homepage-contact" ,
+		"CLOUDFLARE_LOAD_DEV_VARS_FROM_DOT_ENV": true,
+	}
 	/**
 	 * Note: Use secrets to store sensitive data.
 	 * https://developers.cloudflare.com/workers/configuration/secrets/

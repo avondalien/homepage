@@ -1,4 +1,4 @@
-const EMAIL_SERVICE_URL = "https://www.email.com"
+const EMAIL_SERVICE_PATH = "/api/mailer"
 
 interface SendEmailRequest {
     name: string
@@ -8,14 +8,22 @@ interface SendEmailRequest {
 }
 
 const sendEmail = async (emailDetails: SendEmailRequest): Promise<boolean> => {
+    const hostname = window.location.hostname
+    const port = window.location.port
+    const protocol = window.location.protocol
+    const url = `${protocol}//${hostname}:${port}${EMAIL_SERVICE_PATH}`
+    
+    console.log(url)
     const headers = new Headers({
         "Content-Type": "application/json",
     })
 
-    const request = new Request(EMAIL_SERVICE_URL, 
+
+    const request = new Request(url, 
         {
             headers, 
             method: "POST",
+            
             body: JSON.stringify(emailDetails),
         }
     )

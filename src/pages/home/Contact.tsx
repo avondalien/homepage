@@ -2,7 +2,7 @@ import Box from "@mui/material/Box"
 import Card from "@mui/material/Card"
 import CardContent from "@mui/material/CardContent"
 import Typography from "@mui/material/Typography"
-// import { ContactForm } from "./ContactForm"
+import { ContactForm } from "./ContactForm"
 
 const Contact = () => {
 
@@ -12,13 +12,13 @@ const Contact = () => {
                 Contact
             </Typography>
             <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="left">
-                {/* <Box width={{xs: '100%', md: '45%' }} padding={2}>
+                <Box width={{xs: '100%', md: '45%' }} padding={2}>
                     <Card>
                         <CardContent>
                             <ContactForm />
                         </CardContent>
                     </Card>
-                </Box> */}
+                </Box>
                 <Box width={{xs: '100%', md: '45%' }}>
                     <Card>
                         <CardContent>
