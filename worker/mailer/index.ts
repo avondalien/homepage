@@ -26,7 +26,6 @@ const mailer = async (message: MailMessage): Promise<Boolean> => {
     const host = `sns.${env.AWS_REGION}.amazonaws.com`
 
     const headers = {
-        // "content-type": "application/x-www-form-urlencoded; charset=utf-8",
         host
     }
 

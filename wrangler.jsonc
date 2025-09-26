@@ -40,7 +40,6 @@
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
 	 */
 	"vars": {
-		"AWS_ACCESS_KEY_ID": "AKIAZHLCKSUQE53W24HK",
 		"AWS_REGION": "us-east-2",
 		"NEW_LEAD_TOPIC_ARN": "arn:aws:sns:us-east-2:634250761504:homepage-contact" ,
 		"CLOUDFLARE_LOAD_DEV_VARS_FROM_DOT_ENV": true,
