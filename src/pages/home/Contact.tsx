@@ -19,7 +19,7 @@ const Contact = () => {
                         </CardContent>
                     </Card>
                 </Box>
-                <Box width={{xs: '100%', md: '45%' }}>
+                <Box width={{xs: '100%', md: '45%' }} padding={2}>
                     <Card>
                         <CardContent>
                             <Typography 
