@@ -22,7 +22,6 @@ export const ContactForm = () => {
             const [k, v] = entry
             emailRequest[k] = v
         }
-        console.log(JSON.stringify(emailRequest))
         handleSendEmail(emailRequest as SendEmailRequest)
     }
     
