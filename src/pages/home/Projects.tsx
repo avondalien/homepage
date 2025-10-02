@@ -64,6 +64,20 @@ const ProjectDescriptions = [
         image: "",
         imageAltText: ""
     },
+    {
+        title: "Workflow Tracking Tool",
+        description: "A manufacturing company wanted to migrate their part development workflow out of SAP. Working with UX designers George architected a user interface in React and specified an interface with data layers supporting the rich search and filtering requirements. George led a team of junior developers to build a cloud native, event driven data synchronization layer and delivered on time.",
+        categories: ["web development", "mentorship", "cloud", "agile project management"],
+        image: "",
+        imageAltText: ""
+    },
+    {
+        title: "Reducing Software Build Times and Increasing Collaboration",
+        description: "An organization with multiple teams frequently erred when deploying a monorepo React UI with manually tracked dependencies. George identified microfrontends as an appropriate deployment pattern and broke the monorepo into independent modules. Build time was reduced by half an hour and deployment errors disappeared.",
+        categories: ["design patterns", "automated deployments", "reliability"],
+        image: "",
+        imageAltText: ""
+    },
 ]
 
 const Projects = () => {

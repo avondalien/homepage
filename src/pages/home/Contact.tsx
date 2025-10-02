@@ -11,15 +11,15 @@ const Contact = () => {
             <Typography variant="h4">
                 Contact
             </Typography>
-            <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="left">
-                <Box width={{xs: '100%', md: '45%' }} padding={2}>
+            <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-between" marginBottom={2}>
+                <Box width={{xs: '100%', md: '45%' }} padding={0} margin={1}>
                     <Card>
                         <CardContent>
                             <ContactForm />
                         </CardContent>
                     </Card>
                 </Box>
-                <Box width={{xs: '100%', md: '45%' }} padding={2}>
+                <Box width={{xs: '100%', md: '45%' }} padding={0} margin={1}>
                     <Card>
                         <CardContent>
                             <Typography 

@@ -9,7 +9,7 @@ const Hero = () => {
 
     return (
         <section id="summary">
-            <Card>
+            <Card sx={{margin: 1}}>
                 <CardContent>
                         <Stack direction="row" alignItems="space-evenly" spacing={2}>
                             <Box display="flex" flexDirection="column">
