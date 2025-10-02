@@ -8,7 +8,6 @@ const Footer = () => {
                 display="flex" 
                 flexDirection="column"
                 justifyContent="center"
-                padding={2}
             >
                 <Typography variant="body1" align="center">Copyright 2025 Avondalien Software LLC</Typography> 
                 <Typography variant="body1" align="center" component="a" href="mailto:george@avondalien.com">george@avondalien.com</Typography>
