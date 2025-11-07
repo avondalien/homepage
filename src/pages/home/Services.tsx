@@ -5,6 +5,7 @@ import projectManagementImg from "../../assets/img/project_management.svg"
 import architectureImg from "../../assets/img/architecture.svg"
 import devopsImg from "../../assets/img/devops.svg"
 import { OfferingCard } from "./OfferingCard"
+import presentationPdf from "../../assets/collaborative_software_development.pdf"
 
 const offerings = [
     {
@@ -30,6 +31,8 @@ const offerings = [
         description: "We guide student programmers to build more robust software through exposure to engineering best practices, frameworks, and code review.",
         image: mentoringImg,
         imageAltText: "",
+        linkText: "Qubithub Fall Fest Presentation to New Collaborators",
+        linkTarget: presentationPdf
     },
 ]
 

@@ -10,6 +10,8 @@ interface OfferingCardProps extends PropsWithChildren{
     description: string
     image: string
     imageAltText: string
+    linkText?: string
+    linkTarget?: string
 }
 
 const OfferingCard = (props: OfferingCardProps) => {
@@ -17,7 +19,9 @@ const OfferingCard = (props: OfferingCardProps) => {
         title,
         description,
         image,
-        imageAltText
+        imageAltText,
+        linkText, 
+        linkTarget
     } = {...props}
 
     return(
@@ -44,6 +48,12 @@ const OfferingCard = (props: OfferingCardProps) => {
                         <Typography variant="body1">
                             {description}
                         </Typography>
+                        {
+                            linkText && 
+                            <Typography variant="body1">
+                                <a href={linkTarget}>{linkText}</a>
+                            </Typography>
+                        }
                     </Stack>
                 </Stack>
             </CardContent>
