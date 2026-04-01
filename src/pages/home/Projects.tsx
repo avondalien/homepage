@@ -8,15 +8,12 @@ import Stack from "@mui/material/Stack"
 interface ProjectCardProps {
     title: string
     description: string
-    categories: string[]
     githubLink?: string
     siteLink?: string
-    image: string
-    imageAltText: string
 }
 
 const ProjectCard = (props: ProjectCardProps) => {
-    const {title, description, categories, githubLink, siteLink} = props
+    const {title, description, githubLink, siteLink} = props
     return (
         <Card sx={{width: {xs: "100%", md: "calc(50% - 16px)"}}}>
             <CardContent>
@@ -55,33 +52,21 @@ const ProjectDescriptions = [
     {
         title: "Real Time Transit Updates",
         description: "When Terra Coffee opened a location near a busy transit stop, I built a custom bus and train tracking board so customers could spend more time in the shop instead of on the platform.",
-        categories: [],
         githubLink: "https://github.com/avondalien/terra/",
-        image: "",
-        imageAltText: ""
     },
     {
         title: "Northlake Construction",
         description: "A local asphalt paving contractor needed a professional web presence to compete for new business. I visited their facility, listened to what mattered to them, and worked with the owner to select photos that showcased their best work. The result: a clean, static site with a contact form that puts a credible face on a quality local business.",
-        categories: [],
         siteLink: "https://northlake-construction.com",
         githubLink: "https://github.com/northlakeconstruction/northlake-ui",
-        image: "",
-        imageAltText: ""
     },
     {
         title: "Workflow Tracking Tool",
         description: "A manufacturing company needed to move their parts development workflow out of SAP. I worked with UX designers to architect the interface, defined the data requirements, and led a team of junior developers to build a cloud-based solution — delivered on time.",
-        categories: [],
-        image: "",
-        imageAltText: ""
     },
     {
         title: "Faster Builds, Better Teamwork",
         description: "A development team was losing time and shipping errors because their codebase had grown too tangled to deploy reliably. I restructured it into independent modules, cutting build times by 30 minutes and eliminating deployment errors.",
-        categories: [],
-        image: "",
-        imageAltText: ""
     },
 ]
 
