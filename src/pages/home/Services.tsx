@@ -42,7 +42,7 @@ const Services = () => {
                     flexWrap="wrap"
                     gap="32px"
                 >
-                    {offerings.map(o => (<OfferingCard {...o} key={o.title}/>))}
+                    {offerings.map((o, i) => (<OfferingCard {...o} index={i} key={o.title}/>))}
                 </Box>
         </section>
     )
