@@ -5,35 +5,32 @@ import projectManagementImg from "../../assets/img/project_management.svg"
 import architectureImg from "../../assets/img/architecture.svg"
 import devopsImg from "../../assets/img/devops.svg"
 import { OfferingCard } from "./OfferingCard"
-import presentationPdf from "../../assets/collaborative_software_development.pdf"
 
 const offerings = [
     {
-        title: "Software Architecture",
-        description: "We organize your code to confirm correctness, scale for production, and secure your hardware.",
+        title: "Get Online",
+        description: "A custom, mobile-first website that speaks your customers' language — literally. Built to showcase everything your business has to offer.",
         image: architectureImg,
-        imageAltText: "",
+        imageAltText: "A diagram representing a website being built",
     },
     {
-        title: "Reproducible Deployments",
-        description: "Helping you package your software to build and run automatically on your equipment or the cloud.",
-        image: devopsImg,
-        imageAltText: "",
-    },
-    {
-        title: "Software Project Management",
-        description: "We break down system requirements and provide realistic implementation timelines so you can spend more time on your research.",
+        title: "Automate Something",
+        description: "Lead capture forms, online ordering, scheduling, calendar integrations — if there's a manual process slowing your business down, there's probably a better way.",
         image: projectManagementImg,
-        imageAltText: "",
+        imageAltText: "Gears representing business automation",
     },
     {
-        title: "Mentorship",
-        description: "We guide student programmers to build more robust software through exposure to engineering best practices, frameworks, and code review.",
+        title: "Ongoing Support",
+        description: "Things break. Needs change. I offer ongoing support so you always have someone local to call — not a support ticket.",
         image: mentoringImg,
-        imageAltText: "",
-        linkText: "Qubithub Fall Fest Presentation to New Collaborators",
-        linkTarget: presentationPdf
+        imageAltText: "A person representing personal, local support",
     },
+    {
+        title: "Get a Second Opinion",
+        description: "Already working with a vendor but struggling to hold them to account? I bring enterprise project management experience to help small businesses navigate large software implementations — keeping vendors on track, scopes realistic, and projects moving.",
+        image: devopsImg,
+        imageAltText: "A person representing guidance and advice",
+    }
 ]
 
 const Services = () => {
