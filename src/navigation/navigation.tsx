@@ -11,7 +11,7 @@ const Navigation = () => {
                 <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-between" alignItems="center" marginBottom={4}>
                     <Stack direction="column">
                         <Typography variant="logo">Avondalien Software</Typography>
-                        <Typography variant="body2">Built for Research</Typography>
+                        <Typography variant="body2">Software for Chicago</Typography>
                     </Stack>
                     <nav>
                         <Stack direction="row" marginTop={{xs: 2, sm: 0}} spacing={{xs: 0, sm: 2}} justifyContent={{xs: "left", lg: "right"}}>

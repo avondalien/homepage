@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box"
+import Button from "@mui/material/Button"
 import Card from "@mui/material/Card"
 import CardContent from "@mui/material/CardContent"
-import Chip from "@mui/material/Chip"
 import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
 
@@ -11,31 +11,29 @@ const Hero = () => {
         <section id="summary">
             <Card sx={{margin: 1}}>
                 <CardContent>
-                        <Stack direction="row" alignItems="space-evenly" spacing={2}>
-                            <Box display="flex" flexDirection="column">
-                                <Typography variant="h4">
-                                    Production Grade Software for Research
-                                </Typography>
-                                <Typography variant="body1" component="p">
-                                    We architect and implement production ready software while focusing on collaboration, correctness, and reproducibility. 
-                                    Spend your time on your research while we take care of the other stuff. 
-                                </Typography>
-                                <Box display="flex" flexDirection="row" flexWrap="wrap" marginTop={3}>
-                                    <Chip label="Guided Delivery" sx={{marginRight: 1, marginBottom: 1}} />
-                                    <Chip label="Cloud Native Architecture" sx={{marginRight: 1, marginBottom: 1}} />
-                                    <Chip label="Enhanced Collaboration" sx={{marginRight: 1, marginBottom: 1}} />
-                                    <Chip label="Software Design Patterns" sx={{marginRight: 1, marginBottom: 1}} />
-                                </Box>
+                    <Stack direction="row" alignItems="space-evenly" spacing={2}>
+                        <Box display="flex" flexDirection="column" gap={2}>
+                            <Typography variant="h4">
+                                Getting a website.<br />
+                                Fixing a broken one.<br />
+                                Building something nobody's built before.
+                            </Typography>
+                            <Typography variant="h5">
+                                Whatever your business needs, I build it.
+                            </Typography>
+                            <Typography variant="body1" component="p">
+                                I'm George — a Chicago-based software engineer who works with small businesses,
+                                local organizations, and anyone with a practical problem that technology can solve.
+                                From transit displays to lead generation sites to event calendars, I take on the
+                                full range of digital work that keeps a neighborhood running.
+                            </Typography>
+                            <Box>
+                                <a href="#contact">
+                                    <Button variant="outlined">Let's talk about your project →</Button>
+                                </a>
                             </Box>
-                            {/* <Box display={{sm: 'none', md: 'flex'}} width="100%">
-                                <img></img>
-                                <Typography variant="body1" component="ul">
-                                    <li>Cloud native</li>
-                                    <li>Secure</li>
-                                    <li></li>
-                                </Typography>
-                            </Box> */}
-                        </Stack>
+                        </Box>
+                    </Stack>
                 </CardContent>
             </Card>
         </section>
