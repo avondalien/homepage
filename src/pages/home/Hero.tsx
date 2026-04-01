@@ -14,20 +14,14 @@ const Hero = () => {
                     <Stack direction="row" alignItems="space-evenly" spacing={2}>
                         <Box display="flex" flexDirection="column" gap={2}>
                             <Typography variant="h4">
-                                Getting a website.<br />
-                                Fixing a broken one.<br />
-                                Building something nobody's built before.
-                            </Typography>
-                            <Typography variant="h5">
-                                Whatever your business needs, I build it.
+                                Locally sourced software for Chicago
                             </Typography>
                             <Typography variant="body1" component="p">
-                                I'm George — a Chicago-based software engineer who works with small businesses,
-                                local organizations, and anyone with a practical problem that technology can solve.
-                                From transit displays to lead generation sites to event calendars, I take on the
-                                full range of digital work that keeps a neighborhood running.
+                                Most small businesses need more than a template — but less than an enterprise dev shop.
+                                That's exactly where I work. I build custom websites and web apps for Chicago businesses
+                                and organizations that need something that actually fits.
                             </Typography>
-                            <Box>
+                            <Box sx={{paddingTop: 4}}>
                                 <a href="#contact">
                                     <Button variant="outlined">Let's talk about your project →</Button>
                                 </a>
