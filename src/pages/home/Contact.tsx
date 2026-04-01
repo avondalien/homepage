@@ -11,27 +11,27 @@ const Contact = () => {
             <Typography variant="h4">
                 Contact
             </Typography>
-            <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-between" marginBottom={2}>
-                <Box width={{xs: '100%', md: '45%' }} padding={0} margin={1}>
+            <Box display="flex" flexDirection="row" flexWrap="wrap" gap="32px" marginBottom={2}>
+                <Box width={{xs: '100%', md: 'calc(50% - 16px)' }} padding={0}>
                     <Card>
                         <CardContent>
                             <ContactForm />
                         </CardContent>
                     </Card>
                 </Box>
-                <Box width={{xs: '100%', md: '45%' }} padding={0} margin={1}>
+                <Box width={{xs: '100%', md: 'calc(50% - 16px)' }} padding={0}>
                     <Card>
                         <CardContent>
-                            <Typography 
+                            <Typography
                                 variant="h5"
                                 align="center"
                             >
                                 Write Us an Email
                             </Typography>
-                            <Typography 
-                                variant="body1" 
-                                align="center" 
-                                component="a" 
+                            <Typography
+                                variant="body1"
+                                align="center"
+                                component="a"
                                 href="mailto:george@avondalien.com"
                             >
                                 george@avondalien.com

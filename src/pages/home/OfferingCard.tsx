@@ -1,15 +1,16 @@
+import Box from "@mui/material/Box"
 import Card from "@mui/material/Card"
 import CardContent from "@mui/material/CardContent"
-import CardMedia from "@mui/material/CardMedia"
 import Stack from "@mui/material/Stack"
 import Typography from "@mui/material/Typography"
+import type { SvgIconComponent } from "@mui/icons-material"
 import type { PropsWithChildren } from "react"
 
 interface OfferingCardProps extends PropsWithChildren{
     title: string
     description: string
-    image: string
-    imageAltText: string
+    icon: SvgIconComponent
+    index: number
     linkText?: string
     linkTarget?: string
 }
@@ -18,38 +19,45 @@ const OfferingCard = (props: OfferingCardProps) => {
     const {
         title,
         description,
-        image,
-        imageAltText,
-        linkText, 
+        icon: Icon,
+        index,
+        linkText,
         linkTarget
     } = {...props}
 
     return(
         <Card sx={{
-            margin: 1,
-            width: {xs: '100%', md: '20%'}
+            width: {xs: '100%', md: 'calc(50% - 16px)'},
+            display: 'flex',
+            flexDirection: 'column',
         }}>
-            <CardContent>
-                <Stack direction="column" spacing={2}>
-                    <CardMedia
-                        component="img"
-                        height={100}
-                        width={100}
-                        image={image}
-                        alt={imageAltText}
-                        sx={{
-                            objectFit: 'contain', 
-                            display: {xs: 'none', sm: 'flex'}}}
-                    />
-                    <Stack direction="column" spacing={1}>
-                        <Typography variant="h5">
-                            {title}
-                        </Typography>
-                        <Typography variant="body1">
-                            {description}
-                        </Typography>
+            <CardContent sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+                <Stack direction={{ xs: index % 2 === 0 ? 'row' : 'row-reverse', md: 'row' }} spacing={2} sx={{ flexGrow: 1 }}>
+                    <Box sx={{
+                        width: '20%',
+                        flexShrink: 0,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}>
+                        <Box sx={{
+                            width: 64,
+                            height: 64,
+                            borderRadius: '50%',
+                            backgroundColor: '#2e6b54',
+                            border: '3px solid black',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                        }}>
+                            <Icon sx={{ fontSize: 37, color: 'white' }} />
+                        </Box>
+                    </Box>
+                    <Stack direction="column" spacing={1} sx={{ width: '80%' }}>
+                        <Typography variant="h5">{title}</Typography>
+                        <Typography variant="body1">{description}</Typography>
                         {
-                            linkText && 
+                            linkText &&
                             <Typography variant="body1">
                                 <a href={linkTarget}>{linkText}</a>
                             </Typography>

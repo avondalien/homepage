@@ -35,17 +35,20 @@ const About = () => {
                                 their computing projects to life. 
                             </Typography>
                             <Typography variant="body1" component="p">
-                                    Student programmers accomplish major discoveries every day, but their 
-                                    software isn't always reproducible, nor ready to run on production servers 
-                                    with large numbers of users. I bring multidisciplinary experience in enterprise 
-                                    web development and civil engineering to help you take your projects to the 
-                                    next level with: 
+                                I've spent six years as a full-stack developer in enterprise environments, where
+                                I learned firsthand how software can either enable a business or get in its way.
+                                That experience shapes how I work with every client: I listen first, then build
+                                something that actually fits your organization.
                             </Typography>
-                            <Typography variant="body1" component="ul">
-                                <li>Reproducible, scalable, cloud native deployments</li>
-                                <li>Software architecture best practices</li>
-                                <li>Automated testing strategies</li>
-                                <li>Guiding collaboration and continuity among student programmers</li>
+                            <Typography variant="body1" component="p">
+                                I'm at my best building websites and web apps. I've built lead generation sites,
+                                transit trackers, automated deployments, and authentication systems for educational
+                                platforms. 
+                            </Typography>
+                            <Typography variant="body1" component="p">
+                                My target areas include: reproducible software for higher ed, scheduling apps for home
+                                repair services, member management portals for health clubs, and online ordering
+                                for coffee shops, sandwich counters, and neighborhood retail.
                             </Typography>
                             <Typography variant="body1" component="p">
                                     Check out my <a href="https://www.linkedin.com/in/georgedill/">Linked In</a> and <a href="https://github.com/kimjongdill">Github</a> to 
