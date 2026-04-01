@@ -18,7 +18,7 @@ interface ProjectCardProps {
 const ProjectCard = (props: ProjectCardProps) => {
     const {title, description, categories, githubLink} = props
     return (
-        <Card sx={{margin: 1, width: {xs: "100%", md: "45%"}}}>
+        <Card sx={{width: {xs: "100%", md: "calc(50% - 16px)"}}}>
             <CardContent>
                 <Stack spacing={2}>
                     <Typography variant="h5">
@@ -87,7 +87,7 @@ const Projects = () => {
             <Typography variant="h4">
                 Projects
             </Typography>
-            <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-between">
+            <Box display="flex" flexDirection="row" flexWrap="wrap" gap="32px">
                 {ProjectDescriptions.map(pd => (<ProjectCard {...pd} key={pd.title} />))}
             </Box>
         </section>
