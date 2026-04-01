@@ -40,11 +40,11 @@ const ProjectCard = (props: ProjectCardProps) => {
                             <a href={siteLink}>{siteLink.replace('https://', '')}</a>
                         </Typography>
                     )}
-                    {categories.length > 0 && (
+                    {/* {categories.length > 0 && (
                         <Box display="flex" flexDirection="row" flexWrap="wrap">
                             {categories.map(c => (<Chip label={c} key={c} sx={{marginTop: 1, marginRight: 1}}/>))}
                         </Box>
-                    )}
+                    )} */}
                 </Stack>
             </CardContent>
         </Card>
