@@ -8,7 +8,7 @@ import { Projects } from "./Projects"
 const Home = () => {
     return (
         <main>
-        <Stack spacing={4}>
+        <Stack spacing={4} sx={{ paddingTop: 4, paddingBottom: 4 }}>
             <Hero />
             <Services />
             <Projects />
