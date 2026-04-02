@@ -50,10 +50,20 @@ let AvondalienTheme = createTheme({
         },
         h4: {
             fontFamily: "Merriweather",
-            paddingBottom: 16
+            paddingBottom: 16,
         }
     },
     components: {
+        MuiCard: {
+            styleOverrides: {
+                root: {
+                    transition: 'box-shadow 0.2s ease',
+                    '&:hover': {
+                        boxShadow: '0 4px 20px rgba(0,0,0,0.12)',
+                    }
+                }
+            }
+        },
         MuiButton: {
             styleOverrides: {
                 root: {

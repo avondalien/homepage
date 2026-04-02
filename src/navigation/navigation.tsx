@@ -8,7 +8,21 @@ const Navigation = () => {
     return (
         <>
             <header>
-                <Box display="flex" flexDirection="row" flexWrap="wrap" justifyContent="space-between" alignItems="center" marginBottom={4}>
+                <Box
+                    sx={{
+                        backgroundColor: 'white',
+                        borderBottom: '1px solid #e0e0e0',
+                        paddingLeft: 4,
+                        paddingRight: 4,
+                        paddingTop: 2,
+                        paddingBottom: 2,
+                    }}
+                    display="flex"
+                    flexDirection="row"
+                    flexWrap="wrap"
+                    justifyContent="space-between"
+                    alignItems="center"
+                >
                     <Stack direction="column">
                         <Typography variant="logo">Avondalien Software</Typography>
                         <Typography variant="body2">Your friendly neighborhood software engineer</Typography>

@@ -13,7 +13,7 @@ const About = () => {
             <Typography variant="h4">
                 About
             </Typography>
-            <Card sx={{margin: 1}}>
+            <Card>
                 <CardContent>
                     <Box display="flex" alignItems="center">
                         <CardMedia
